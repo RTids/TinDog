@@ -1,0 +1,126 @@
+body {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+
+.wrapper {
+    width: 450px;
+    height: 673px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 0;
+    background-color: white;
+}
+
+.dog-pic {
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border-radius: 15px;;
+}
+
+header {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 7em
+}
+
+.header-icon{
+    height: 25px;
+}
+
+.button-icon {
+    height: 20px;
+    margin: auto;
+}
+
+
+h2 {
+    color: grey;
+}
+
+.main-content {
+    position: relative;
+    width: 98%;
+    height: 550px;
+    background: linear-gradient(0deg, rgba(151, 151, 151, 0.9) -11.44%, rgba(230, 230, 230, 0) 39.97%), url(dog3.jpg);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    z-index: 0
+}
+
+h1, p{
+    position: absolute;
+    padding-left: 12px;
+    color: white;
+}
+
+h1 {
+    bottom: 25px;
+}
+
+p {
+    bottom: 10px;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 10px;
+    gap: 2em;
+    align-items: center;
+}
+
+button {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0px 10px 20px #E9E9EA;
+    background-color: white;
+}
+
+#like:hover{
+    background-color: rgba(100, 246, 100, 0.593);
+    transition: all 1s;
+}
+
+#dislike:hover {
+    background-color: rgba(249, 97, 97, 0.638);
+    transition: all 1s;
+}
+
+#liked, #disliked {
+    position: absolute;
+    z-index: 1000;
+    top: 120px;
+    left: 520px;
+    height: 90px;
+    transform: rotate(-20deg)
+}
+
+#liked{
+    display: none
+}
+
+#disliked {
+    display: none;
+}
+
+.no-more {
+    text-align: center;
+    color: black;
+    align-self: center;
+    margin-bottom: 250px;
+}
